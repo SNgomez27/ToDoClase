@@ -1,0 +1,21 @@
+<header class="w-100 position-sticky top-0 py-3 px-3 bg-black m-auto align-items-center row">
+    <div class="col-9 position-sticky">
+        <i class="bi bi-search text-primary "></i>
+        <input class="align-items-center text-bg-primary" type="search" placeholder="Busqueda">
+    </div>
+    <nav class="bg-dark active" [class.active]="showNav">
+        <i class="bi bi-person text-light px-1 mb-2 text-decoration-none mt-5"></i>
+        <a class="text-white" >Nombre   </a>
+        <a class="text-white d-block mb-2 text-decoration-none ">Inicio</a>
+        <a class="text-white d-block mb-2 text-decoration-none">Lista de tarea</a>
+        <a class="text-white d-block mb-2 text-decoration-none">Contacto</a>
+        <button type="button" class="btn btn-light position-absolute" (click)="toggleNav()">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </nav>
+    <div class="col-3 text-end">
+        <button type="button" class="btn btn-light align-items-center" (click)="toggleNav()">
+            <i class=" bi bi-list text-primary"></i>
+        </button>
+    </div>
+</header>
