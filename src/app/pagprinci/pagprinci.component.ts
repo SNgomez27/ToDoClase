@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-pagprinci',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './pagprinci.component.scss'
 })
 export class PagprinciComponent {
-
+  constructor(
+      private router: Router
+  ) {
+  }
+  goPagNewTarea() {
+    this.router.navigate(['pagtarea']);
+  }
 
 }

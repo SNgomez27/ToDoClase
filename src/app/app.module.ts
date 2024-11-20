@@ -11,6 +11,7 @@ import { LayoutSinHeaderComponent } from './layout-sin-header/layout-sin-header.
 import { LayoutconHeaderComponent } from './layoutcon-header/layoutcon-header.component';
 import { RegisterComponent } from './register/register.component';
 import { PagprinciComponent } from './pagprinci/pagprinci.component';
+import { PagtareaComponent } from './pagtarea/pagtarea.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PagprinciComponent } from './pagprinci/pagprinci.component';
     LayoutSinHeaderComponent,
     LayoutconHeaderComponent,
     RegisterComponent,
-    PagprinciComponent
+    PagprinciComponent,
+    PagtareaComponent
   ],
   imports: [
     BrowserModule,

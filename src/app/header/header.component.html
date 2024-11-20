@@ -1,7 +1,7 @@
-<header class="w-100 position-sticky top-0 py-3 px-3 bg-black m-auto align-items-center row">
+<header class="w-100 position-sticky top-0 py-3 px-3 bg-secondary m-auto align-items-center row">
     <div class="col-10 position-sticky">
         <i class="bi bi-search text-primary "></i>
-        <input class="  align-items-center text-bg-primary" type="search" placeholder="Busqueda">
+        <input class="  align-items-center" type="search" placeholder="Busqueda">
     </div>
     <nav class="bg-dark active" [class.active]="showNav">
         <i class="bi bi-person text-light px-1 py-5 mb-2 text-decoration-none mt-4"></i>
@@ -12,6 +12,10 @@
         <a class="text-white d-block  text-decoration-none">Familia</a>
         <a class="text-white d-block  text-decoration-none">Deporte</a>
         <a class="text-white d-block  text-decoration-none">Otros</a>
+        <a class="text-white d-block">Cerrar sesion </a>
+        <button type="button" class="btn  align-items-center btn btn-transparent btn-sm " (click)="goPagLogin()">
+            <i class=" bi bi-x-square text-primary"></i>
+        </button>
         <button type="button" class="btn btn-light position-absolute" (click)="toggleNav()">
             <i class="bi bi-x-lg"></i>
         </button>
@@ -20,8 +24,6 @@
         <button type="button" class="btn btn-light align-items-center" (click)="toggleNav()">
             <i class=" bi bi-list text-primary"></i>
         </button>
-        <button type="button" class="btn btn-light align-items-center" (click)="goPagLogin()">
-            <i class=" bi bi-x-square text-primary"></i>
-        </button>
+
     </div>
 </header>

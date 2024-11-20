@@ -5,6 +5,7 @@ import {LayoutSinHeaderComponent} from "./layout-sin-header/layout-sin-header.co
 import {LayoutconHeaderComponent} from "./layoutcon-header/layoutcon-header.component";
 import {PagprinciComponent} from "./pagprinci/pagprinci.component";
 import {RegisterComponent} from "./register/register.component";
+import {PagtareaComponent} from "./pagtarea/pagtarea.component";
 
 const routes: Routes = [
   {
@@ -12,6 +13,7 @@ const routes: Routes = [
         {path:"", component:LoginComponent},
         {path:"login", component:LoginComponent},
         {path:"register", component:RegisterComponent},
+          {path:"pagtarea", component:PagtareaComponent}
     ]},
     {path:"", component:LayoutconHeaderComponent, children:[
             {path:"pagprinci", component:PagprinciComponent},
