@@ -11,8 +11,12 @@ export class PagtareaComponent {
       private router: Router
   ) {
   }
-  goPagPrincipal() {
+  goBackPrincipal() {
     this.router.navigate(['pagprinci']);
   }
+  guardar(){
+    this.router.navigate(['pagprinci']);
+
+}
 
 }
