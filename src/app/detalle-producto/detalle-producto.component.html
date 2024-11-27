@@ -3,8 +3,7 @@
         <p>Nombre:{{producto?.nombre}}</p>
         <p>Precio:{{producto?.precio}}</p>
         <p>Id:{{producto?.id}}</p>
-        <p>Stock:{{producto?.stock}}</p>
-
-
+        <p *ngIf="producto?.stock == true" class="text-success">Stock:{{producto?.stock}}</p>
+        <p *ngIf="producto?.stock == false" class="text-danger">Stock:{{producto?.stock}}</p>
     </div>
 </div>
