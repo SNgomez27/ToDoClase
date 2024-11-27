@@ -18,4 +18,7 @@ export class HeaderComponent {
   goPagLogin() {
     this.router.navigate(['login']);
   }
+  goProductos() {
+    this.router.navigate(['productos']);
+  }
 }

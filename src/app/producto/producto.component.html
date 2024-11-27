@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-6 py-3 text-center " *ngFor="let producto of arrayProducto">
+        <span> Nombre: {{producto.nombre}} </span><br>
+        <span> Precio: {{producto.precio}} </span>
+        <br>
+        <button type="button" class="rounded-3 " (click)="enviarProducto(producto)">
+            Ver mas
+        </button>
+    </div>
+</div>

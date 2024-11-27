@@ -12,25 +12,32 @@ import { LayoutconHeaderComponent } from './layoutcon-header/layoutcon-header.co
 import { RegisterComponent } from './register/register.component';
 import { PagprinciComponent } from './pagprinci/pagprinci.component';
 import { PagtareaComponent } from './pagtarea/pagtarea.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ProductoComponent } from './producto/producto.component';
+import { DetalleProductoComponent } from './detalle-producto/detalle-producto.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    LoginComponent,
-    LayoutSinHeaderComponent,
-    LayoutconHeaderComponent,
-    RegisterComponent,
-    PagprinciComponent,
-    PagtareaComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        LoginComponent,
+        LayoutSinHeaderComponent,
+        LayoutconHeaderComponent,
+        RegisterComponent,
+        PagprinciComponent,
+        PagtareaComponent,
+        ProductoComponent,
+        DetalleProductoComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        FormsModule,
+        ReactiveFormsModule
+    ],
+    providers: []
 })
 export class AppModule { }
